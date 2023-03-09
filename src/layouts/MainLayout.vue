@@ -12,7 +12,10 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> Essential Links </q-item-label>
+        <q-item-label header> Code Coaching </q-item-label>
+
+        <EssentialLink v-for="link in codeCoachingLinks" :key="link.title" v-bind="link" />
+        <q-item-label header> Quasar </q-item-label>
 
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
       </q-list>
@@ -27,6 +30,21 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
+
+const codeCoachingLinks = [
+  {
+    title: 'Code Coaching',
+    caption: 'code-coaching.dev',
+    icon: 'school',
+    link: 'https://code-coaching.dev',
+  },
+  {
+    title: 'GitHub',
+    caption: 'github.com/code-coaching',
+    icon: 'school',
+    link: 'https://github.com/code-coaching/quasar-tailwind',
+  },
+];
 
 const linksList = [
   {
@@ -84,6 +102,7 @@ export default defineComponent({
     const leftDrawerOpen = ref(false);
 
     return {
+      codeCoachingLinks,
       essentialLinks: linksList,
       leftDrawerOpen,
       toggleLeftDrawer() {
