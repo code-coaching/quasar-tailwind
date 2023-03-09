@@ -4,27 +4,11 @@ A Quasar template combined with TailwindCSS, provided by [Code Coaching](https:/
 
 ## Start from this template
 
-### Manual
-
-Download the .zip file and extract it in your project folder.
-
-### Command line
-
-This commando can be used in an existing git repository. It will download the latest version of this template and extract it in a folder named `quasar-tailwind-main`.
-
 ```sh
-curl -L https://github.com/code-coaching/quasar-tailwind/archive/refs/heads/main.zip | tar -xz
+git clone git@github.com:code-coaching/quasar-tailwind.git QuackUI
 ```
 
-In case you want it to be in the root of your project, you can use these commandos:
-
-```sh
-mv quasar-tailwind-main/* ./
-```
-
-```sh
-rm -rf quasar-tailwind-main
-```
+`QuackUI` is the name of the directory you want to create. You can change it to whatever you want.
 
 ## Install the dependencies
 
