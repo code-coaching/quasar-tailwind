@@ -1,13 +1,13 @@
 <template>
   <div class="relative">
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-green-400">
+    <div class="sticky top-0 flex h-screen flex-col items-center justify-center bg-green-400">
       <h2 class="text-4xl">Quasar Tailwind</h2>
       <p>Scroll Down</p>
     </div>
     <div
-      class="sticky top-0 h-screen flex flex-col items-center justify-center bg-indigo-600 text-white"
+      class="sticky top-0 flex h-screen flex-col items-center justify-center bg-indigo-600 text-white"
     >
-      <h2 class="text-4xl mb-4">Example Component</h2>
+      <h2 class="mb-4 text-4xl">Example Component</h2>
       <example-component
         title="Example component"
         active
@@ -16,13 +16,13 @@
       ></example-component>
     </div>
     <div
-      class="sticky top-0 h-screen flex flex-col items-center justify-center bg-purple-600 text-white"
+      class="sticky top-0 flex h-screen flex-col items-center justify-center bg-purple-600 text-white"
     >
       <h2 class="text-4xl">The Third Title</h2>
       <p>Scroll Down</p>
     </div>
     <div
-      class="sticky top-0 h-screen flex flex-col items-center justify-center bg-neutral-800 text-white"
+      class="sticky top-0 flex h-screen flex-col items-center justify-center bg-neutral-800 text-white"
     >
       <h2 class="text-4xl">The Fourth Title</h2>
     </div>
