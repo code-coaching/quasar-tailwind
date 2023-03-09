@@ -1,6 +1,6 @@
 # Quasar Tailwind (quasar-tailwind)
 
-A Quasar template combined with TailwindCSS
+A Quasar template combined with TailwindCSS, provided by [Code Coaching](https://code-coaching.dev).
 
 ## Install the dependencies
 
@@ -25,6 +25,8 @@ npm run lint
 ```
 
 ### Format the files
+
+This will also sort the classes to have a consistent order.
 
 ```bash
 yarn format
